@@ -1,0 +1,1005 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default/Generirc/General Styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* 1em = 14px = 1rem */
+    line-height: 1.5; /* relative to font size due to no measurements */
+    color: #000000;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    margin-bottom: 17px;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h3 {
+
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+p {
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    /* padding: 1em; */
+    /* width: 678px; */
+    padding: 14px;
+    margin: 0 auto;
+    
+    /* background-color: pink; */
+}
+
+/* Navigation section */
+
+nav {
+    background-color: #222222;
+}
+
+
+
+nav a:link,
+nav a:visited {
+
+    display: block;
+    color:#c78b07;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+    background-color: #c78b07;
+    color: #000000;
+}
+
+.logo {
+    background-color: #c78b07; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav form, input {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    flex-grow: 1;
+    font-size: 18px;
+    
+    /* background-color: pink; */
+}
+
+/* Welcome section */
+
+.header-welcome {
+
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 64px 0;
+    /* padding-top: 60px; */
+    /* padding-bottom: 60px; */
+    /* Might have to add padding or margin */
+}
+
+.header-welcome .container {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+    /* padding: 50px 16px 16px 16px; */
+
+}
+
+.header-welcome button {
+    display: block;
+    color:#000000;
+    background-color: #c78b07;
+    border: none;
+    font-weight: 400;
+    font-size: 21px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 28px;
+    padding-right: 27px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/* About section */
+
+.section-about {
+
+    background-color: #ffe6ac;
+}
+
+
+/* Our Services section */
+
+.section-services {
+
+    background-color: white;
+
+}
+
+
+.card-transformation, .card-marketing, .card-video, .card-development, 
+.card-print  {
+
+    background-color: #ffe6ac;
+    margin-bottom: 14px;
+
+} 
+
+
+
+
+.cards-description {
+
+    padding: 15px;
+}
+
+.section-services button {
+
+    display: block;
+    color: white;
+    background-color: #222222;
+    border: none;
+    font-weight: 400;
+    font-size: 21px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    padding-left: 33px;
+    padding-right: 32px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/* .card-transformation img {
+
+    width: 100%;
+    margin-bottom: 10px;;
+} */
+
+ .section-services img {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+} 
+
+
+/* .test img {
+
+    width: 100%;
+} */
+
+ /* img .card-transformation {
+
+    width: 1080px;
+    Height: 100px;
+} */
+
+
+
+
+/* Our Vision section */
+
+.section-vision h3, .section-vision p {
+    color: white;
+}
+
+.section-vision {
+
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.section-vision button {
+
+    display: block;
+    color: white;
+    background-color: #222222;
+    border: 1px solid #c78b07;
+    font-weight: 400;
+    font-size: 21px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 33px;
+    padding-right: 32px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Our Team section */
+
+.section-team img {
+
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.team-member-one, .team-member-two {
+
+    background-color: #ffe6ac;
+    margin-bottom: 14px;
+
+}
+
+.section-team h3 {
+
+    margin-bottom: -1px;
+}
+
+.section-team h4 {
+
+    border-bottom: 2px solid #c78b07;
+}
+
+.section-team p {
+
+    padding-top: 15px;
+}
+
+/* Contact Us section */
+
+
+.contact-card-message-us button {
+    display: block;
+    color:#c78b07;
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+/* .contact-form label {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.contact-form textarea {
+    margin-top: 5px;
+    display: inline-block;
+} */
+
+.contact-form input[type=text], input[type=email], textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+}
+
+.contact-hours {
+    width: 100%;
+    margin-top: -13px;
+    margin-bottom: 25px;
+}
+
+.contact-hours th, td {
+    border: 1px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-hours th {
+    background-color: #ffe6ac;
+    text-align: center;
+}
+
+.contact-hours td {
+    padding-left: 15px;
+}
+
+.contact-card-location iframe {
+    width: 100%;
+    margin-bottom: 19px;
+}
+
+/* Footer section */
+
+footer {
+    background-color: #222222;
+}
+
+/* footer .container {
+    background-color: #222222;
+} */
+
+footer p {
+    color: #c78b07;
+}
+
+footer p:nth-child(1) {
+    color: #c78b07;
+    padding-top: 20px;
+}
+
+footer p:nth-child(2) {
+    color: #c78b07;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+/* ====================================================================================================================
+                                                    Desktop Styles                                                          
+*/
+
+/* @media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1172px;
+        margin: 0 auto;
+    }
+
+     Have a ton of code, but want have to change imgs, colours, fonts 
+} */
+
+
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
+
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
+/* DESKTOP STYLES: ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    /* ALL YOUR DESKTOP STYLES HERE */
+
+
+    /* body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;  1em = 14px = 1rem 
+        line-height: 1.5;  relative to font size due to no measurements 
+        color: #000000;
+    } */
+    
+    h1 {
+        font-size: 81px;
+        line-height: 106px;
+        margin-bottom: 17px;
+        font-weight: bold;
+    
+    }
+    
+    h2 {
+        font-size: 54px;
+        line-height: 118px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    h3 {
+    
+        font-size: 36px;
+        line-height: 1;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+    
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    nav .logo {
+        background: none;
+        padding: 0;
+    }
+    
+    /* Header section */
+
+
+    nav .container {
+        display: flex;
+        align-items: center;
+        /* background-color: aquamarine; */
+        /* justify-content: space-evenly; */
+    }
+
+    nav .container .logo {
+        margin-right: 67px;
+    }
+
+    nav .container ul {
+        /* font-size: 20px; */
+        /* font-weight: 400; */
+        display: flex;
+        flex-grow: 0.5;
+        justify-content: space-between;
+        /* justify-content: space-evenly; */
+        /* background-color: greenyellow; */
+        /* align-items: stretch; */
+    }
+
+
+    nav a:link,
+    nav a:visited {
+
+    /* display: block; */
+    color:#c78b07;
+    /* background-color: purple; */
+    font-size: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    text-align: center;
+    /* width: 100%; */
+    
+    }
+
+    nav li.current a:link,
+    nav li.current a:visited {
+        background-color: #c78b07;
+        color: #000000;
+    }
+    
+    /* nav .container li {
+        background-color: purple;
+    } */
+
+    nav form, input {
+        width: 10px;
+
+    }
+
+    /* nav form, input {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        flex-grow: 1;
+        font-size: 18px;
+        
+        background-color: blueviolet;
+    } */
+
+    
+
+    /* nav a:link,
+    nav a:visited {
+
+        display: block;
+        color:#c78b07;
+        font-size: 18px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        text-decoration: none;
+        text-align: center;
+}
+
+    nav li.current a:link,
+    nav li.current a:visited {
+        background-color: #c78b07;
+        color: #000000;
+
+} */
+
+    .header-welcome {
+        
+
+        /* background-image: url(../images/main-banner.jpg); */
+        /* background-size: cover; */
+        background-position: 50% 50%;
+        padding: 64px 0;
+        /* padding-top: 60px; */
+        /* padding-bottom: 60px; */
+        /* Might have to add padding or margin */
+    }
+
+    .header-welcome .container {
+
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        /* padding-top: 50px; */
+        padding: 50px 16px 16px 16px;
+    }
+
+
+    /* About section */
+
+    .section-about .container {
+        /* display: flex; */
+        /* flex-grow: 1; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+
+    }
+
+    .pool-table {
+        /* background-color: purple; */
+        padding-top: 16px;
+        padding-bottom: 24px;
+        
+    }
+
+    .section-about h2 {
+        margin-bottom: 0px;
+    }
+
+    /* .about-description {
+        background-color: pink;
+    } */
+
+    /* About Us section */
+
+    /* six columns two rows */
+
+
+    /* .section-services { */
+        /* background-color: purple; */
+    /* } */
+    /* .section-services .container { */
+        /* display: grid; */
+        /* grid-template-columns: repeat(6, 1fr); */
+        /* grid-template-rows: repeat(2, 1fr); */
+        /* background-color: pink; */
+    /* } */
+    
+
+    .section-services button {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .card-transformation, .card-marketing {
+        margin-bottom: 0px;
+
+} 
+
+    /* .card-transformation, .card-marketing, .card-video, .card-development, 
+.card-print  {
+
+    background-color: #ffe6ac;
+    margin-bottom: 14px;
+    margin-bottom: 1px;
+
+}  */
+
+/* .cards-description {
+
+    margin-bottom: -66px;
+} */
+
+
+    .section-services h3 {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .section-services .grid-container {
+        /* background-color: greenyellow; */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-template-rows: 1fr 626px;
+        grid-gap: 15px;
+        /* grid-row-gap: 0px; */
+        /* grid-column-gap: 15px; */
+        grid-template-areas:
+        "dig dig dig mark mark mark"
+        "vid vid dev dev prin prin";
+    }
+
+    .section-services .grid-container .card-transformation {
+        grid-area: dig;
+
+    }
+
+    .section-services .grid-container .card-marketing {
+        grid-area: mark;
+        
+    }
+
+    .section-services .grid-container .card-video {
+        grid-area: vid;
+    }
+
+    .section-services .grid-container .card-development {
+        grid-area: dev;
+        
+    }
+
+    .section-services .grid-container .card-print {
+        grid-area: prin;
+        
+    }
+
+    /* Our Vision section */
+
+    .section-vision {
+
+        background-image: url(../images/vision.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        padding-top: 45px;
+        padding-bottom: 15px;
+        height: 239px;
+    }
+    
+    .section-vision button {
+    
+        display: block;
+        color: white;
+        background-color: #222222;
+        border: 1px solid #c78b07;
+        font-weight: 400;
+        font-size: 24px;
+        padding: 46px 42px 46px 43px;
+        /* padding-top: 39px; */
+        /* padding-bottom: 39px; */
+        /* padding-left: 33px; */
+        /* padding-right: 32px; */
+        text-decoration: none;
+        text-align: center;
+    } 
+
+    /* Our Team section  */
+
+    .section-team img {
+        margin-bottom: 0px;
+    }
+
+
+    .cards-description.bio-one {
+        padding: 15px 15px 0px 15px;
+        margin-bottom: 0px;
+    }
+
+    .cards-description.bio-two {
+        padding: 15px 15px 0px 15px;
+    }
+
+    
+
+    /* .section-team img {
+
+        margin-bottom: 0px;
+    } */
+
+    /* .section-team .container { */
+        .the-team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-template-rows: repeat(2, 389px);
+        grid-gap: 0px;
+        background-color: pink;
+        
+    }
+
+        .team-member-one {
+            margin-bottom: 0px;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            /* grid-template-rows: repeat(2, 1fr); */
+        }
+
+
+
+        /* .team-member-one {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            display: flex;
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        } */
+
+        .member-photo-one {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+
+            /* width: 155%; */
+            /* flex-basis: calc(51%); */
+        }
+
+        .cards-description.bio-one {
+            grid-column: 2 / span 1;
+            grid-row: 1;
+            /* flex-basis: calc(49%); */
+
+        }
+
+        .team-member-two {
+            margin-bottom: 0px;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+
+        .member-photo-two {
+            grid-column: 2 / span 1;
+            grid-row: 2;
+        }
+
+        .cards-description.bio-two {
+            grid-column: 1 / span 1;
+            grid-row: 2;
+        }
+
+
+
+        /* .team-member-two {
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: row-reverse;
+            grid-row: 2;
+            grid-column: 1 / span 2;
+        } */
+
+        /* .member-photo-two { */
+            /* width: 160%; */
+            /* flex-grow: 8; */
+            /* flex-basis: calc(51%); */
+
+        /* } */
+
+        /* .cards-description.bio-two { */
+            /* flex-grow: calc(); */
+            /* flex-basis: calc(49%); */
+        /* } */
+
+
+
+
+    /* .team-member-one {
+        grid-column: 1 / span 2;
+        display: flex;
+    }
+
+    .team-member-two {
+        grid-column: 1 /span 2; 
+        display: flex;
+        flex-direction: row-reverse;
+    } */
+
+
+
+
+
+
+        /* .section-team .container .team-member-one, .section-team .container .team-member-two {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 0px;
+            background-color: pink;
+        }
+
+        .member-photo-one {
+            grid-column: 1 / span 1;
+        }
+
+        .section-team .cards-description.bio-one {
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 1;
+        }
+
+        .member-photo-two {
+            grid-column: 2 / span 1;
+        }
+
+        .section-team .cards-description.bio-two {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        } */
+        
+
+        /* .team-member-1 {
+            grid-column: 1 / span 2;
+            display: flex;
+            flex-grow: 1;
+            margin-bottom: 0px;
+        }
+        
+        .team-member-2 {
+            grid-column: 1 / span 2;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row-reverse;
+            margin-bottom: 0px;
+        }
+
+        .section-team img {
+
+            margin-bottom: 0px;
+            flex-grow: 1;
+        } */
+
+        
+
+        
+
+
+        /* .team-member-1, .team-member-2 {
+
+            background-color: #ffe6ac;
+            margin-bottom: 14px;
+        
+        } */
+
+
+
+        /* Contact Us section */
+
+        .contacts-container {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: repeat(2, 1fr); */
+            grid-template-rows: 1fr 230px;
+            /* background-color: pink; */
+        }
+
+        .contact-card-message-us {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .contact-card-hours {
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 2;
+        }
+
+        .contact-card-location {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ }    /* End of web media queries */
